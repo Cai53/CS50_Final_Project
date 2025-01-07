@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Response - Mood Mate{% endblock %}
+
+{% block content %}
+
+<h1>{{ message }}</h1>
+
+<a href="{{ url_for('history') }}" class="close" aria-label="Dismiss alert">
+    <span aria-hidden="true"><i class="fa fa-window-close">See the evolution of my feelings</i></span> </a>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Great! - Mood Mate{% endblock %}
+
+{% block content %}
+    <h1>{{ suggest }}<span class="emoji">&#128512;!</span></h1>
+
+    <img alt="motto_1" src="{{ url_for('static', filename='cool.jpg') }}" class="motto1">
+
+    <a href="{{ url_for('history') }}" class="close" aria-label="Dismiss alert">
+        <span aria-hidden="true"><i class="fa fa-window-close">Evolution of my feelings</i></span>
+    </a>
+{% endblock %}
+

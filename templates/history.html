@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+    History - Mood Mate
+{% endblock %}
+
+{% block content %}
+<h1> History of my feelings </h1><br>
+
+    <table class="table">
+        <thead class="table-success">
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Feeling</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for feeling in feelings %}
+            <tr>
+                <td scope="row">{{ feeling["time"] }}</td>
+                <td scope="row">{{ feeling["feeling"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+<!-- Button to exit and return to the register page -->
+<div class="text-center mt-4">
+    <a href="{{ url_for('register') }}" class="btn btn-danger">Exit and Go Back to Register</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+
+{% extends "base.html" %}
+
+{% block title %}Presentation - Mood Mate{% endblock %}
+
+{% block content %}
+    <div id="presentation-content">
+        <h1>Hello, {% if user_id %}{{ session.username }}{% else %}Dear!{% endif %}</h1>
+
+        <h3 class="feel">How do you feel today? (click on any button)</h3>
+
+        <table >
+
+            <tbody>
+                <tr>
+                    <td>
+                        <img alt="sun" src="{{ url_for('static', filename='sun.png') }}" class="img-fluid sun">
+                    </td>
+                    <td>
+                        <img alt="sun_cloud" src="{{ url_for('static', filename='sun_cloud.png') }}" class="img-fluid sun_cloud">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="{{ url_for('great') }}" method="post">
+                         <button type="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Great!</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="{{ url_for('ok') }}" method="post">
+                         <button type="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Just ok!</button>
+                         </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt="cloud" src="{{ url_for('static', filename='cloud.jpg') }}" class="img-fluid cloud">
+                    </td>
+                    <td>
+                        <img alt="storm" src="{{ url_for('static', filename='storm.png') }}" class="img-fluid storm">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="{{ url_for('not_ok') }}" method="post">
+                        <button type="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Not so well!</button>
+                     </form>
+                    </td>
+                    <td>
+                        <form action="{{ url_for('bad') }}" method="post">
+                        <button type="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Not well at all!</button>
+                     </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+

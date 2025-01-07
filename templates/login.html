@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Login - Mood Mate{% endblock %}
+
+{% block content %}
+<header>
+    <img alt="logo" src="{{ url_for('static', filename='logo.jpg') }}" class="logo">
+</header>
+
+    <h2 class="text-center">Login here</h2>
+    <br>
+
+    <p><i>Please write a username and password down below to continue</i></p>
+    {% if error %}
+        <p class="text-danger" role="alert">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    <form method="post" class="mt-4">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
+        </div>
+        <button type="submit" class="btn btn-dark">Login</button>
+    </form>
+    <p class="mt-3 text-center">Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
+</div>
+{% endblock %}

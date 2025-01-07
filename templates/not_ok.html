@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}not_ok - Mood Mate{% endblock %}
+
+{% block content %}
+<h1>{{ suggest }}<span class="emoji">&#128170;</span></h1>
+
+<img alt="motto_2" src="{{ url_for('static', filename='not.jpg') }}" class="motto2">
+
+<a href="{{ url_for('history') }}" class="close" aria-label="Dismiss alert">
+    <span aria-hidden="true"><i class="fa fa-window-close">See the evolution of my feelings</i></span> </a>
+
+{% endblock %}
