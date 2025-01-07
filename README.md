@@ -63,5 +63,13 @@ I found an interesting Website that helped me creating my logo as well as the im
 You are prompted to put the name of a domain and I chose *Social*.
 Then you can select more themes, images, colors, modify the font for more accuracy.
 
-## 4/ Test the App
+## 4/ Future Enhancements
++ Data Visualization:
+Include charts to depict emotional trends over time.
+
++ Reminders and Notifications:
+Add optional reminders to encourage consistent logging.
+
++ Global Insights:
+Provide anonymized statistics to show global emotional trends.
 
