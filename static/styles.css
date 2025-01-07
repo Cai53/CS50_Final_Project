@@ -1,0 +1,61 @@
+
+.logo {
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-top: 30px;
+   }
+
+main {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.welcome {
+    margin-top: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 12px;
+}
+
+/* style for great template */
+
+.sun {
+    width: 55%;
+}
+
+.cloud {
+    width: 57%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.storm {
+    width: 60%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.feel {
+    font-family: Papyrus;
+}
+
+.emoji {
+    font-size: 60px;
+}
+
+.motto1 {
+    width: 30%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.text-center {
+    margin-top: 30px;
+}
+
+
